@@ -1,10 +1,8 @@
 # 🤖 Robot Framework - Estudos e Automação Web
 
-Projeto criado para estudos práticos de **Robot Framework** com **SeleniumLibrary**, utilizando automação de testes web.
-
 ## 📌 Sobre o projeto
 
-Este projeto reúne testes automatizados desenvolvidos durante meus estudos de Robot Framework.
+Este projeto foi criado para estudos práticos de **Robot Framework** com **SeleniumLibrary**, utilizando automação de testes web.
 
 O objetivo é praticar conceitos de automação, organização de testes, criação de keywords reutilizáveis, validações e boas práticas de automação web.
 
@@ -20,18 +18,13 @@ O objetivo é praticar conceitos de automação, organização de testes, criaç
 
 ## 📂 Estrutura do projeto
 
-```text
-robot-framework-estudos/
-│
-├── resources/
-│   └── keywords.robot
-│
-├── tests/
-│   ├── primeiro_teste.robot
-│   └── teste_web.robot
-│
-├── .gitignore
-└── README.md
+- **resources/**
+  - `keywords.robot`
+- **tests/**
+  - `primeiro_teste.robot`
+  - `teste_web.robot`
+- `.gitignore`
+- `README.md`
 
 ## 🧪 Testes automatizados
 
@@ -48,12 +41,19 @@ Atualmente o projeto possui:
 
 Com o Robot Framework instalado, execute:
 
-```bash
-robot -d results tests
+`robot -d results tests`
 
-Ou, no ambiente utilizado neste projeto:
-& "$env:LOCALAPPDATA\Python\pythoncore-3.14-64\python.exe" -m robot -d results tests
-Os resultados da execução são gerados na pasta results/.
+No ambiente utilizado neste projeto:
+
+`& "$env:LOCALAPPDATA\Python\pythoncore-3.14-64\python.exe" -m robot -d results tests`
+
+Os resultados da execução são gerados na pasta `results/`.
 
 ## 📚 Objetivo
-Este projeto faz parte da minha evolução profissional em QA e automação de testes, com foco no aprendizado prático de Robot Framework e preparação para automação web e mobile.
+
+Este projeto faz parte da minha evolução profissional em **QA e automação de testes**, com foco no aprendizado prático de Robot Framework e preparação para automação web e mobile.
+
+---
+
+**Sabrina Viecili**  
+QA | Testes de Software | Automação
