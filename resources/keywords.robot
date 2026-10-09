@@ -7,14 +7,17 @@ Abrir Navegador
     Maximize Browser Window
 
 Preencher credenciais
-    Input Text        id=user-name    standard_user
-    Input Password    id=password     secret_sauce
-    Click Element     id=login-button
+    [Arguments]    ${usuario}    ${senha}
+    Input Text    id=user-name    ${usuario}
+    Input Password    id=password    ${senha}
+    Click Element    id=login-button
 
 Validar acesso aos produtos
     Wait Until Page Contains Element    class=inventory_list    timeout=10s
     Title Should Be    Swag Labs
     Page Should Contain    Sauce Labs Backpack
+Validar erro de login
+    Page Should Contain    Epic sadface: Username and password do not match any user in this service
 
 Fechar Navegador
     Close All Browsers

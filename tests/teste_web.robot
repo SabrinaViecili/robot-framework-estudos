@@ -1,11 +1,14 @@
 *** Settings ***
 Resource    ../resources/keywords.robot
 
-Suite Setup       Abrir Navegador
-Suite Teardown    Fechar Navegador
+Test Setup       Abrir Navegador
+Test Teardown    Fechar Navegador
 
 *** Test Cases ***
-Realizar login com sucesso
-    Preencher credenciais
+Realizar Login com sucesso
+    Preencher credenciais    standard_user    secret_sauce
     Validar acesso aos produtos
 
+Realizar Login com senha inválida
+    Preencher credenciais    standard_user    senha_invalida
+    Validar erro de login
