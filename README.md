@@ -2,9 +2,9 @@
 
 ## 📌 Sobre o projeto
 
-Este projeto foi criado para estudos práticos de **Robot Framework** com **SeleniumLibrary**, utilizando automação de testes web.
+Este projeto foi criado para praticar **Robot Framework** com **SeleniumLibrary**, utilizando automação de testes web.
 
-O objetivo é praticar conceitos de automação, organização de testes, criação de keywords reutilizáveis, validações e boas práticas de automação web.
+O objetivo é desenvolver conhecimentos em automação, organização de testes, criação de keywords reutilizáveis, localização de elementos HTML, validações e boas práticas de automação web.
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -18,9 +18,9 @@ O objetivo é praticar conceitos de automação, organização de testes, criaç
 
 ## 📂 Estrutura do projeto
 
-- **resources/**
+- `resources/`
   - `keywords.robot`
-- **tests/**
+- `tests/`
   - `primeiro_teste.robot`
   - `teste_web.robot`
 - `.gitignore`
@@ -28,26 +28,43 @@ O objetivo é praticar conceitos de automação, organização de testes, criaç
 
 ## 🧪 Testes automatizados
 
-Atualmente o projeto possui:
+Atualmente, o projeto contempla:
 
 - ✅ Validação básica do ambiente Robot Framework
-- ✅ Abertura do navegador
+- ✅ Abertura e fechamento do navegador
 - ✅ Login com usuário válido
 - ✅ Validação de acesso à página de produtos
-- ✅ Utilização de keywords reutilizáveis
-- ✅ Uso de Suite Setup e Suite Teardown
+- ✅ Login com senha inválida
+- ✅ Adição de produto ao carrinho
+- ✅ Validação dinâmica da quantidade de itens no carrinho
+- ✅ Criação e reutilização de keywords
+- ✅ Uso de `Test Setup` e `Test Teardown`
+- ✅ Inspeção de elementos HTML com DevTools
+- ✅ Utilização de seletores CSS baseados em `data-test`
+
+## 🔎 Conceitos praticados
+
+- Localização de elementos por CSS
+- Uso de atributos HTML, como `data-test` e `aria-label`
+- Extração de números de textos utilizando expressões regulares
+- Conversão de texto para número inteiro
+- Validações e análise de falhas em testes automatizados
 
 ## ▶️ Como executar
 
-Com o Robot Framework instalado, execute:
+Com o Robot Framework e as bibliotecas necessárias instaladas, execute:
 
-`robot -d results tests`
+```bash
+robot -d results tests
+```
 
-No ambiente utilizado neste projeto:
+No ambiente Windows utilizado neste projeto:
 
-`& "$env:LOCALAPPDATA\Python\pythoncore-3.14-64\python.exe" -m robot -d results tests`
+```powershell
+& "$env:LOCALAPPDATA\Python\pythoncore-3.14-64\python.exe" -m robot -d results tests
+```
 
-Os resultados da execução são gerados na pasta `results/`.
+Os resultados da execução são gerados na pasta `results/`, que não é versionada no Git.
 
 ## 📚 Objetivo
 
